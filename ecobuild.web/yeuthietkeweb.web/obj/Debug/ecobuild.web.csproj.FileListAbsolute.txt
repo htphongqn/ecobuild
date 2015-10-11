@@ -1,0 +1,9 @@
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\bin\yeuthietkeweb.web.dll
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\bin\yeuthietkeweb.web.pdb
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\bin\Controller.dll
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\bin\Model.dll
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\bin\Controller.pdb
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\bin\Model.pdb
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\obj\Debug\ecobuild.web.csprojResolveAssemblyReference.cache
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\obj\Debug\yeuthietkeweb.web.dll
+E:\WWW\ecobuild\ecobuild.web\yeuthietkeweb.web\obj\Debug\yeuthietkeweb.web.pdb
