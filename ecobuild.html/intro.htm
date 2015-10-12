@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Untitled Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/intro.css"/>
+<script type="text/javascript" src="scripts/jquery.min.1.11.2.js"></script>
+</head>
+<body>
+<div class=" container page">
+  <div class="bor1">
+    <div class="bor2 intro-page"> 
+      <!---================HEADER===================--> 
+      <script>
+		//slider nivo 2
+		 $(window).load(function() {
+			$('#slider-intro').nivoSlider({	
+			 controlNavThumbs: true,
+				pauseOnHover: true,
+				controlNav: true,
+			});
+		});
+		</script> 
+      <!---================MAIN MENU===================-->
+      <figure class="slider-intro">
+        <div class="theme-default slider-wrapper-detail">
+          <div id="slider-intro" class="nivoSlider"> 
+            <!--begin--> 
+            <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a> 
+            <!--end --> 
+          </div>
+        </div>
+      </figure>
+    </div>
+    <figure class="brand-ft"><a href="intro.htm"><img src="data/logo.png" /></a></figure>
+    <p class="copyright">All rights reserved by Truong Phu Steel ABN 25051975</p>
+    <p class="menu-home"> <a href="index.htm" class="link-home"><i class="fa fa-square-o"> </i></a> </p>
+  </div>
+</div>
+<!---===============javascript==================--> 
+<script type="text/javascript" src="scripts/js.js"></script> 
+<script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+</body>
+</html>

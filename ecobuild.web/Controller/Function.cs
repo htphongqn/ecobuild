@@ -197,6 +197,11 @@ namespace Controller
             string banner = banner_field.ToString();
             return banner == "1" ? "<span class='brand'><a href='/trang-chu.html'>" + GetImage(Banner_type, Banner_ID, Banner_Image) + "</a></span>" : "<figure class='brand-name'> " + GetImagebanner(Banner_type, Banner_ID, Banner_Image) + "</figure>";
         }
+        public string Getlogo(object Banner_type, object banner_field, object Banner_ID, object Banner_Image, object Href)
+        {
+            string banner = banner_field.ToString();
+            return banner == "1" ? "<a href='" + Href + "'>" + GetImage(Banner_type, Banner_ID, Banner_Image) + "</a>" : GetImagebanner(Banner_type, Banner_ID, Banner_Image);
+        }
         public string GetImage(object Banner_type, object Banner_ID, object Banner_Image)
         {
             try

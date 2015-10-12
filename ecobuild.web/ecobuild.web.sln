@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecobuild.web", "yeuthietkeweb.web\ecobuild.web.csproj", "{91A20496-DA04-4246-9492-3E4EF7F69DB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecobuild.web", "ecobuild.web\ecobuild.web.csproj", "{91A20496-DA04-4246-9492-3E4EF7F69DB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{CE1DABDD-1283-4F83-98FB-AFF7BBFAFFB1}"
 EndProject
