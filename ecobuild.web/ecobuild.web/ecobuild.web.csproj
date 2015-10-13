@@ -112,6 +112,8 @@
     <Content Include="Pages\Ajax-customer.aspx" />
     <Content Include="Pages\cart-result.aspx" />
     <Content Include="Pages\Contact.aspx" />
+    <Content Include="Pages\Contact-en.aspx" />
+    <Content Include="Pages\Main-en.aspx" />
     <Content Include="Pages\Main.aspx" />
     <Content Include="Pages\Print.aspx" />
     <Content Include="Resources\fonts\FallingSky.svg" />
@@ -208,6 +210,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Masterpages\enDefault.Master.cs">
+      <DependentUpon>enDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\enDefault.Master.designer.cs">
+      <DependentUpon>enDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\enIndex.Master.cs">
+      <DependentUpon>enIndex.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\enIndex.Master.designer.cs">
+      <DependentUpon>enIndex.Master</DependentUpon>
+    </Compile>
     <Compile Include="Masterpages\Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -242,6 +258,20 @@
     </Compile>
     <Compile Include="Pages\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contact-en.aspx.cs">
+      <DependentUpon>Contact-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contact-en.aspx.designer.cs">
+      <DependentUpon>Contact-en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main-en.aspx.cs">
+      <DependentUpon>Main-en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main-en.aspx.designer.cs">
+      <DependentUpon>Main-en.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
@@ -397,6 +427,8 @@
     <Content Include="Pages\captchr.ashx" />
     <Content Include="Masterpages\Index.Master" />
     <Content Include="Masterpages\Default.Master" />
+    <Content Include="Masterpages\enIndex.Master" />
+    <Content Include="Masterpages\enDefault.Master" />
     <None Include="Resources\fonts\FallingSky.eot" />
     <None Include="Resources\fonts\FallingSky.otf" />
     <None Include="Resources\fonts\FallingSky.ttf" />
