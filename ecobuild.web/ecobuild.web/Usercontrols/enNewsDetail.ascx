@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NewsDetail.ascx.cs" Inherits="ecobuild.Usercontrols.NewsDetail" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="enNewsDetail.ascx.cs" Inherits="ecobuild.Usercontrols.enNewsDetail" %>
 <%@ Register src="Toolbar.ascx" tagname="Toolbar" tagprefix="uc1" %>
 <uc1:Toolbar ID="Toolbar1" runat="server" />
 <div class="bor2">

@@ -10,7 +10,7 @@ using GiaNguyen.Components;
 
 namespace ecobuild.Usercontrols
 {
-    public partial class NewsDetail : System.Web.UI.UserControl
+    public partial class enProjectDetail : System.Web.UI.UserControl
     {
         #region Declare
 
@@ -24,25 +24,15 @@ namespace ecobuild.Usercontrols
         string _sNewsSeoUrl = string.Empty;
         Attfile att = new Attfile();
         Product_Details pro_detail = new Product_Details();
-        int _typecat = 0;
+
         #endregion
         protected void Page_Load(object sender, EventArgs e)
         {
             _sNews_Seo_Url = Utils.CStrDef(Request.QueryString["purl"]);
-            _typecat = Utils.CIntDef(Request.QueryString["typecat"]);
-            plIntro.Visible = plNews.Visible = false;
-            if (_typecat == 0)
-            {
-                plNews.Visible = true;
-                Show_File_HTML();
-                hplPrint.HRef = "/in/" + _sNews_Seo_Url + ".html";
-                //Get_ViewMore();
-                Tinkhac();
-            }
-            else if(_typecat == 3) {
-                plIntro.Visible = true;
-                Loadimgbig(100, 0, ref Rpimg_small1);
-            }
+            Show_File_HTML();
+            hplPrint.HRef = "/in/" + _sNews_Seo_Url + ".html";
+            //Get_ViewMore();
+            Tinkhac();
             gettitle();
 
         }
@@ -133,42 +123,6 @@ namespace ecobuild.Usercontrols
         public string getDate(object News_PublishDate)
         {
             return fun.getDate(News_PublishDate);
-        }
-        public void Load_img_news(int take, int skip, ref Repeater rp)
-        {
-            rp.DataSource = pro_detail.Load_Product_Detail(_sNewsSeoUrl);
-            rp.DataBind();
-        }
-        int _count = 0;
-        public void Loadimgbig(int take, int skip, ref Repeater rp)
-        {
-            try
-            {
-                int _newsID = Utils.CIntDef(Session["news_id"]);
-                var list = pro_detail.Load_albumimg(_newsID).Skip(skip).Take(take).ToList();
-                if (list.Count > 0)
-                {
-                    rp.DataSource = list;
-                    rp.DataBind();
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-        public string GetImageT(object News_Id, object News_Image1)
-        {
-            try
-            {
-                return fun.GetImageT_News(News_Id, News_Image1);
-            }
-            catch (Exception ex)
-            {
-                clsVproErrorHandler.HandlerError(ex);
-                return null;
-            }
         }
         #endregion
     }

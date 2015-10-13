@@ -9,7 +9,7 @@ using vpro.functions;
 
 namespace ecobuild.Usercontrols
 {
-    public partial class Logo : System.Web.UI.UserControl
+    public partial class enLogo : System.Web.UI.UserControl
     {
         Propertity per = new Propertity();
         Function fun = new Function();
@@ -24,7 +24,7 @@ namespace ecobuild.Usercontrols
         #region Load logo-banner
         protected void load_logo()
         {
-            var _logoSlogan = per.Load_logo_and_sologan(2,1);
+            var _logoSlogan = per.Load_logo_and_sologan(2, 2);
             if (_logoSlogan.ToList().Count > 0)
             {
                 Rplogo.DataSource = _logoSlogan.Where(n => n.BANNER_FIELD1 == "1");

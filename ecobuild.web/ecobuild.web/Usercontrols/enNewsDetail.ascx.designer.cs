@@ -10,7 +10,7 @@
 namespace ecobuild.Usercontrols {
     
     
-    public partial class NewsDetail {
+    public partial class enNewsDetail {
         
         /// <summary>
         /// Toolbar1 control.

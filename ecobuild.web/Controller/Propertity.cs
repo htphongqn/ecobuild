@@ -261,11 +261,11 @@ namespace Controller
             return cat_id;
         }
         //Logo-sologan
-        public List<ESHOP_BANNER> Load_logo_and_sologan(int limit)
+        public List<ESHOP_BANNER> Load_logo_and_sologan(int limit, int lang)
         {
             try
             {
-                 var _logoSlogan = (from a in db.ESHOP_BANNERs
+                 var _logoSlogan = (from a in db.ESHOP_BANNERs where a.BANNER_LANGUAGE == lang
                                select a).Take(limit).ToList();
                  return _logoSlogan;
             }

@@ -10,7 +10,7 @@ using GiaNguyen.Components;
 
 namespace ecobuild.Usercontrols
 {
-    public partial class NewsDetail : System.Web.UI.UserControl
+    public partial class enNewsDetail : System.Web.UI.UserControl
     {
         #region Declare
 
@@ -122,7 +122,7 @@ namespace ecobuild.Usercontrols
         {
             try
             {
-                return fun.Getlink_News(News_Url, News_Seo_Url, cat_seo);
+                return fun.Getlink_News_EN(News_Url, News_Seo_Url, cat_seo);
             }
             catch (Exception ex)
             {

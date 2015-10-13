@@ -10,16 +10,7 @@
 namespace ecobuild.Usercontrols {
     
     
-    public partial class NewsDetail {
-        
-        /// <summary>
-        /// Toolbar1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::GiaNguyen.UIs.Toolbar Toolbar1;
+    public partial class enProjectDetail {
         
         /// <summary>
         /// lbNewsTitle control.
@@ -29,15 +20,6 @@ namespace ecobuild.Usercontrols {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbNewsTitle;
-        
-        /// <summary>
-        /// plNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder plNews;
         
         /// <summary>
         /// lblNewsTitle1 control.
@@ -101,23 +83,5 @@ namespace ecobuild.Usercontrols {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater Rptinkhac;
-        
-        /// <summary>
-        /// plIntro control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder plIntro;
-        
-        /// <summary>
-        /// Rpimg_small1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Rpimg_small1;
     }
 }

@@ -10,7 +10,7 @@ using Controller;
 
 namespace ecobuild.Usercontrols
 {
-    public partial class ListNews : System.Web.UI.UserControl
+    public partial class enListNews : System.Web.UI.UserControl
     {
         #region Declare
         List_news lnews = new List_news();
@@ -106,7 +106,7 @@ namespace ecobuild.Usercontrols
         {
             try
             {
-                return fun.Getlink_News(News_Url, News_Seo_Url, cat_seo);
+                return fun.Getlink_News_EN(News_Url, News_Seo_Url, cat_seo);
             }
             catch (Exception ex)
             {

@@ -166,6 +166,15 @@
     <Content Include="Resources\styles\navx.css" />
     <Content Include="Resources\styles\nivo-slider.css" />
     <Content Include="Resources\styles\styles.css" />
+    <Content Include="Usercontrols\enListNews.ascx" />
+    <Content Include="Usercontrols\enListProject.ascx" />
+    <Content Include="Usercontrols\enLogo.ascx" />
+    <Content Include="Usercontrols\enMenuMain.ascx" />
+    <Content Include="Usercontrols\enNewsDetail.ascx" />
+    <Content Include="Usercontrols\enPath.ascx" />
+    <Content Include="Usercontrols\enProjectDetail.ascx" />
+    <Content Include="Usercontrols\enSearchResult.ascx" />
+    <Content Include="Usercontrols\enToolbar.ascx" />
     <Content Include="Usercontrols\ListNews.ascx" />
     <Content Include="Usercontrols\ListProject.ascx" />
     <Content Include="Usercontrols\Logo.ascx" />
@@ -249,6 +258,69 @@
       <DependentUpon>Print.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usercontrols\enListNews.ascx.cs">
+      <DependentUpon>enListNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enListNews.ascx.designer.cs">
+      <DependentUpon>enListNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enListProject.ascx.cs">
+      <DependentUpon>enListProject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enListProject.ascx.designer.cs">
+      <DependentUpon>enListProject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enLogo.ascx.cs">
+      <DependentUpon>enLogo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enLogo.ascx.designer.cs">
+      <DependentUpon>enLogo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enMenuMain.ascx.cs">
+      <DependentUpon>enMenuMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enMenuMain.ascx.designer.cs">
+      <DependentUpon>enMenuMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enNewsDetail.ascx.cs">
+      <DependentUpon>enNewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enNewsDetail.ascx.designer.cs">
+      <DependentUpon>enNewsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enPath.ascx.cs">
+      <DependentUpon>enPath.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enPath.ascx.designer.cs">
+      <DependentUpon>enPath.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enProjectDetail.ascx.cs">
+      <DependentUpon>enProjectDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enProjectDetail.ascx.designer.cs">
+      <DependentUpon>enProjectDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enSearchResult.ascx.cs">
+      <DependentUpon>enSearchResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enSearchResult.ascx.designer.cs">
+      <DependentUpon>enSearchResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\enToolbar.ascx.cs">
+      <DependentUpon>enToolbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\enToolbar.ascx.designer.cs">
+      <DependentUpon>enToolbar.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\ListNews.ascx.cs">
       <DependentUpon>ListNews.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

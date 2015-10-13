@@ -42,7 +42,7 @@ namespace ecobuild.vi_vn
 
         protected void load_logo()
         {
-            var _logoSlogan = pro.Load_logo_and_sologan(2);
+            var _logoSlogan = pro.Load_logo_and_sologan(2, 1);
             if (_logoSlogan.ToList().Count > 0)
             {
                 Rplogo.DataSource = _logoSlogan;
