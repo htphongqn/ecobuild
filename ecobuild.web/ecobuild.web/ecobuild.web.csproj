@@ -144,6 +144,7 @@
     <Content Include="Resources\images\icon-truycap.gif" />
     <Content Include="Resources\images\li_f.png" />
     <Content Include="Resources\images\loading.gif" />
+    <Content Include="Resources\images\reloadpaf.png" />
     <Content Include="Resources\images\social_network.jpg" />
     <Content Include="Resources\scripts\bxslider.js" />
     <Content Include="Resources\scripts\jquery.min.1.11.2.js" />

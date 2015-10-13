@@ -156,6 +156,7 @@
                     <asp:RadioButtonList ID="rblCatType" runat="server" RepeatColumns="5">
                         <asp:ListItem Text="Tin tức" Value="0" Selected="True"></asp:ListItem>
                         <asp:ListItem Text="Sản phẩm" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="Global Contact" Value="2"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
                 <div class="form-group">

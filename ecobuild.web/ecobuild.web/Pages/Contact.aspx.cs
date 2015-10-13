@@ -135,7 +135,7 @@ namespace ecobuild
                     string _sEmailCC = string.Empty;
                     string _sEmail = txtEmail.Value;
                     string _sName = Txtname.Value;
-                    string _add = Txtaddress.Value;
+                    string _add = "";
                     string _phone = txtPhone.Value;
                     string _content = txtContent.Value;
                     string _title = txttitle.Value;
@@ -144,7 +144,6 @@ namespace ecobuild
                     _mailBody += "<br/><br/><strong>Tên khách hàng</strong>: " + _sName;
                     _mailBody += "<br/><br/><strong>Số điện thoại</strong>: " + _phone;
                     _mailBody += "<br/><br/><strong>Email</strong>: " + _sEmail;
-                    _mailBody += "<br/><br/><strong>Địa chỉ</strong>: " + _add;
                     _mailBody += "<br/><br/><strong>Tiêu đề</strong>: " + _title;
                     _mailBody += "<br/><br/><strong>Nội dung</strong>: " + _content + "<br/><br/>";
                     string _sMailBody = string.Empty;
@@ -153,7 +152,7 @@ namespace ecobuild
                     sm.SendEmailSMTP("Thông báo: Bạn đã liên hệ thành công", _sEmail, _sEmailCC, "", _sMailBody, true, false);
                     string strScript = "<script>";
                     strScript += "alert(' Đã gửi thành công!');";
-                    strScript += "window.location='/trang-chu.html';";
+                    strScript += "window.location='/';";
                     strScript += "</script>";
                     Page.RegisterClientScriptBlock("strScript", strScript);
                 //}

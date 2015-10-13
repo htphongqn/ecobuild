@@ -6,9 +6,10 @@
         <a href="/" class="back-to"><i class="fa fa-mail-reply"></i> Back</a> 
         <a href="/" class="bk-home"><i class="fa fa-home"></i></a> 
     </div>
+    <asp:PlaceHolder ID="plNews" runat="server">
     <div class="testDiv">
     <div class="iblock list-media">
-        <asp:Repeater ID="Rplistnews" runat="server">
+        <asp:Repeater ID="rptlistnews" runat="server">
         <ItemTemplate>
             <article class="media">
                 <figure class="photo-media">
@@ -26,7 +27,26 @@
         <p class="pagination clearfix"><asp:Literal ID="ltrPage" runat="server"></asp:Literal></p>
     </div>
     </div>
-      
+    </asp:PlaceHolder>
+    <asp:PlaceHolder ID="plGlobal" runat="server">
+        <div class="testDiv">
+            <div class="iblock globalcontact">
+                <div class="list-country">
+                <asp:Repeater ID="rptGlobal" runat="server">
+                <ItemTemplate>
+                    <figure class="img-country"> 
+                        <%# GetImageT(Eval("NEWS_ID"), Eval("NEWS_IMAGE3"))%>
+                        <p><%# Eval("NEWS_TITLE")%></p>
+                        <p class="popup-flag"> 
+                            <%# Eval("NEWS_DESC")%> 
+                        </p>
+                    </figure>
+                </ItemTemplate>
+                </asp:Repeater>
+                </div>
+            </div>
+        </div>
+    </asp:PlaceHolder>
     <div class="control-bottom"> <a href="javascript:history.back()" class="back-to"><i class="fa fa-mail-reply"></i> Back</a>
         <nav class="breadcrumb">
             <ul>

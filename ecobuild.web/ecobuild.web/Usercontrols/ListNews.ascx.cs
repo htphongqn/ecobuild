@@ -30,7 +30,17 @@ namespace ecobuild.Usercontrols
             _typecat = Utils.CIntDef(Request.QueryString["typecat"]);
             if (!IsPostBack)
             {
-                Loadlist();
+                plNews.Visible = plGlobal.Visible = false;
+                if (_typecat == 0)
+                {
+                    plNews.Visible = true;
+                    Loadlist(rptlistnews);
+                }
+                else if (_typecat == 2)
+                {
+                    plGlobal.Visible = true;
+                    Loadlist(rptGlobal);
+                }
                 Loadtitle();
             }
         }
@@ -45,7 +55,7 @@ namespace ecobuild.Usercontrols
                 throw;
             }
         }
-        public void Loadlist()
+        public void Loadlist(Repeater rpt)
         {
             try
             {
@@ -55,13 +65,13 @@ namespace ecobuild.Usercontrols
                 {
                     if (_page != 0)
                     {
-                        Rplistnews.DataSource = list.Skip(sotin * _page - sotin).Take(sotin);
-                        Rplistnews.DataBind();
+                        rpt.DataSource = list.Skip(sotin * _page - sotin).Take(sotin);
+                        rpt.DataBind();
                     }
                     else
                     {
-                        Rplistnews.DataSource = list.Take(sotin);
-                        Rplistnews.DataBind();
+                        rpt.DataSource = list.Take(sotin);
+                        rpt.DataBind();
                     }
                     ltrPage.Text = change.result(list.Count, sotin, _cat_seo_url, 0, _page, 1);
 

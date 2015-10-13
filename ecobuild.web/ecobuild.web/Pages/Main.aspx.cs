@@ -29,11 +29,11 @@ namespace ecobuild
                         ltrFavicon.Text = "<link rel='shortcut icon' href='" + PathFiles.GetPathConfigs() + _configs.ToList()[0].CONFIG_FAVICON + "' />";
                 }
 
-                UserControl list_pro = Page.LoadControl("../UIs/ListProject.ascx") as UserControl;
-                UserControl prodetails = Page.LoadControl("../UIs/ProjectDetail.ascx") as UserControl;
-                UserControl list_news = Page.LoadControl("../UIs/ListNews.ascx") as UserControl;
-                UserControl details_news = Page.LoadControl("../UIs/NewsDetail.ascx") as UserControl;
-                UserControl search = Page.LoadControl("../UIs/Search.ascx") as UserControl;
+                UserControl list_pro = Page.LoadControl("../Usercontrols/ListProject.ascx") as UserControl;
+                UserControl prodetails = Page.LoadControl("../Usercontrols/ProjectDetail.ascx") as UserControl;
+                UserControl list_news = Page.LoadControl("../Usercontrols/ListNews.ascx") as UserControl;
+                UserControl details_news = Page.LoadControl("../Usercontrols/NewsDetail.ascx") as UserControl;
+                //UserControl search = Page.LoadControl("../Usercontrols/Search.ascx") as UserControl;
                 int _type = Utils.CIntDef(Request["type"]);
                 string _catSeoUrl = Utils.CStrDef(Request.QueryString["curl"]);
                 string _newsSeoUrl = Utils.CStrDef(Request.QueryString["purl"]);
@@ -57,11 +57,11 @@ namespace ecobuild
                             else phdMain.Controls.Add(list_news);
                         }
                         break;
-                    case 5:
-                        phdMain.Controls.Add(search);
-                        HtmlHead header = base.Header;
-                        header.Title = "Tìm kiếm";
-                        break;
+                    //case 5:
+                    //    phdMain.Controls.Add(search);
+                    //    HtmlHead header = base.Header;
+                    //    header.Title = "Tìm kiếm";
+                    //    break;
                     case 6:
                         getsession.LoadNewsInfo(_newsSeoUrl);
                         Bind_meta_tags_news();

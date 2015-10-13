@@ -22,13 +22,22 @@ namespace ecobuild.Usercontrols {
         protected global::System.Web.UI.WebControls.Label lbNewsTitle;
         
         /// <summary>
-        /// Rplistnews control.
+        /// plNews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Rplistnews;
+        protected global::System.Web.UI.WebControls.PlaceHolder plNews;
+        
+        /// <summary>
+        /// rptlistnews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptlistnews;
         
         /// <summary>
         /// ltrPage control.
@@ -38,5 +47,23 @@ namespace ecobuild.Usercontrols {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltrPage;
+        
+        /// <summary>
+        /// plGlobal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder plGlobal;
+        
+        /// <summary>
+        /// rptGlobal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptGlobal;
     }
 }

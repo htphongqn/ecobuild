@@ -132,6 +132,5 @@ E:\WWW\ecobuild\ecobuild.web\Model\obj\Debug\Model.pdb
 H:\SoftWeb\ecobuild\ecobuild.web\Model\bin\Debug\Model.dll.config
 H:\SoftWeb\ecobuild\ecobuild.web\Model\bin\Debug\Model.dll
 H:\SoftWeb\ecobuild\ecobuild.web\Model\bin\Debug\Model.pdb
-H:\SoftWeb\ecobuild\ecobuild.web\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 H:\SoftWeb\ecobuild\ecobuild.web\Model\obj\Debug\Model.dll
 H:\SoftWeb\ecobuild\ecobuild.web\Model\obj\Debug\Model.pdb
