@@ -29,7 +29,7 @@ namespace ecobuild.Usercontrols
         {
             try
             {
-                Rpmenu.DataSource = per.Loadmenu(0, 10, 1, 1, -1);
+                Rpmenu.DataSource = per.Loadmenu(0, 100, 1, 1, -1);
                 Rpmenu.DataBind();
             }
             catch (Exception ex)
