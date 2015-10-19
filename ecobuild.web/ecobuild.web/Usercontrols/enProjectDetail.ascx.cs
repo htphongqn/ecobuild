@@ -51,22 +51,6 @@ namespace ecobuild.Usercontrols
                 throw;
             }
         }
-
-
-
-        //private void Get_ViewMore()
-        //{
-        //    try
-        //    {
-        //        int _newsID = Utils.CIntDef(Session["news_id"]);
-        //        hplViewmore.HRef = ndetail.Get_ViewMore(_newsID);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        clsVproErrorHandler.HandlerError(ex);
-        //    }
-        //}
-
         private void Show_File_HTML()
         {
             try
@@ -76,7 +60,10 @@ namespace ecobuild.Usercontrols
                 {
                     _sNews_Seo_Url = ndetail.Get_News_seo_url(_sCat_Seo_Url);
                 }
-                liHtml.Text = ndetail.Showfilehtm(_sCat_Seo_Url, _sNews_Seo_Url);
+                string str = ndetail.Showfilehtm(_sCat_Seo_Url, _sNews_Seo_Url);
+                if (str != "")
+                    liHtml.Text = str;
+                else lblMsg.Text = "This content is currently being updated!";
             }
             catch (Exception ex)
             {

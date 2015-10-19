@@ -64,6 +64,7 @@ namespace ecobuild.Usercontrols
 
                     ltrPage.Text = change.result(list.Count, sotin, _cat_seo_url, 0, _page, 1);
                 }
+                else lblMsg.Text = "This content is currently being updated!";
             }
             catch (Exception)
             {

@@ -8,6 +8,7 @@
     </div>
     <div class="testDiv">
     <div class="iblock list-media list-project">
+        <div style="width: 100%;text-align: center;"><asp:Label ID="lblMsg" runat="server" Font-Size="14"/></div>
         <asp:Repeater ID="Rplistpro" runat="server">
         <ItemTemplate>
         <article class="media">

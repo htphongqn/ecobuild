@@ -13,6 +13,7 @@
         <!-- begin-->
         <asp:Literal ID="liHtml" runat="server"></asp:Literal>
         <!-- end--> 
+        <div style="width: 100%;text-align: center;"><asp:Label ID="lblMsg" runat="server" Font-Size="14"/></div>
     </article>
     <div class="clearfix function">
         <div class="shareBox"> 

@@ -12,6 +12,7 @@
         <p class="tt-main"><span>News</span></p>
         <h1 class="tt-detail-news"><asp:Label ID="lblNewsTitle1" runat="server" /></h1>
         <asp:Literal ID="liHtml" runat="server"></asp:Literal>
+        <div style="width: 100%;text-align: center;"><asp:Label ID="lblMsg" runat="server" Font-Size="14"/></div>
     </article>
     <div class="clearfix function">
         <div class="shareBox"> 
