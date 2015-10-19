@@ -196,9 +196,10 @@ namespace yeuthietkeweb.cms.pages
             finally
             {
                 items = null;
-                SearchResult();
+                //SearchResult();
             }
 
+            Response.Redirect("category_list.aspx");
         }
 
         protected void lbtSave_Click(object sender, EventArgs e)
@@ -237,7 +238,10 @@ namespace yeuthietkeweb.cms.pages
                 clsVproErrorHandler.HandlerError(ex);
             }
             finally
-            { SearchResult(); }
+            { //SearchResult(); 
+            }
+
+            Response.Redirect("category_list.aspx");
         }
 
         #endregion

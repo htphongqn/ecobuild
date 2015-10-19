@@ -54,6 +54,7 @@ namespace yeuthietkeweb.cms.pages
                 //LoadBrands();
                 getInfo();
                 LoadCategoryParent();
+                rblNewsType_SelectedIndexChanged(null, null);
 
             }
         }
@@ -258,7 +259,7 @@ namespace yeuthietkeweb.cms.pages
                         div_price.Visible = true;
 
                     }
-                    //trCat.Visible = false;
+                    trCat.Visible = false;
                     txtCode.Value = G_info.ToList()[0].n.NEWS_CODE;
                     txtTitle.Value = G_info.ToList()[0].n.NEWS_TITLE;
                     txtDesc.Value = G_info.ToList()[0].n.NEWS_DESC;
