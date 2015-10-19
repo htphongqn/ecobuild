@@ -27,7 +27,7 @@ namespace ecobuild.Usercontrols
             _Catid = Utils.CIntDef(Session["Cat_id"]);
             _cat_seo_url = Request.QueryString["curl"];
             _page = Utils.CIntDef(Request.QueryString["page"]);
-            _typecat = lnews.getType(_cat_seo_url);
+            _typecat = lnews.getCatType(_cat_seo_url);
             if (!IsPostBack)
             {
                 plNews.Visible = plGlobal.Visible = false;
@@ -75,8 +75,8 @@ namespace ecobuild.Usercontrols
                         rpt.DataBind();
                     }
                     ltrPage.Text = change.result(list.Count, sotin, _cat_seo_url, 0, _page, 1);
-
                 }
+                else lblMsg.Text = "This content is currently being updated!";
 
             }
             catch (Exception)

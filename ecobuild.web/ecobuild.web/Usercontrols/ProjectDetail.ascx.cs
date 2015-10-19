@@ -76,7 +76,10 @@ namespace ecobuild.Usercontrols
                 {
                     _sNews_Seo_Url = ndetail.Get_News_seo_url(_sCat_Seo_Url);
                 }
-                liHtml.Text = ndetail.Showfilehtm(_sCat_Seo_Url, _sNews_Seo_Url);
+                string str = ndetail.Showfilehtm(_sCat_Seo_Url, _sNews_Seo_Url);
+                if (str != "")
+                    liHtml.Text = str;
+                else lblMsg.Text = "Nội dung đang được cập nhật!";
             }
             catch (Exception ex)
             {

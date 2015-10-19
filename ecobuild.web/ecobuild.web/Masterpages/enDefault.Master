@@ -18,13 +18,13 @@
         <div class="bor1">
             <p class="lang-box">
                 <a href="/"><img src="/Resources/images/vi.png" /></a>
-                <a href="home.html"><img src="/Resources/images/en.png" /></a>
+                <a href="/home.html"><img src="/Resources/images/en.png" /></a>
             </p>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
             <uc1:Logo ID="Logo1" runat="server" />
             <p class="copyright">All rights reserved by Truong Phu Steel ABN 241499</p>
-            <p class="menu-home"> <a class="link-home" href="/"><i class="fa fa-square-o"> </i></a> </p>
+            <p class="menu-home"> <a class="link-home" href="/home.html"><i class="fa fa-square-o"> </i></a> </p>
         </div>
     </div>
 

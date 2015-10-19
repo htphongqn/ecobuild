@@ -68,7 +68,7 @@ namespace Controller
                 throw;
             }
         }
-        public int getType(string _cat_seo_url)
+        public int getCatType(string _cat_seo_url)
         {
             try
             {

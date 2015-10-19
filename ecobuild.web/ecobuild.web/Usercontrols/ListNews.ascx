@@ -9,6 +9,7 @@
     <asp:PlaceHolder ID="plNews" runat="server">
     <div class="testDiv">
     <div class="iblock list-media">
+        <div style="width: 100%;text-align: center;"><asp:Label ID="lblMsg" runat="server" Font-Size="14"/></div>
         <asp:Repeater ID="rptlistnews" runat="server">
         <ItemTemplate>
             <article class="media">
