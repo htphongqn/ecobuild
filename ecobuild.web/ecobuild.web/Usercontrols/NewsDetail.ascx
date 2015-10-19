@@ -7,7 +7,6 @@
         <a href="/" class="back-to"><i class="fa fa-mail-reply"></i> Back</a> 
         <a href="/" class="bk-home"><i class="fa fa-home"></i></a> 
     </div>
-    <asp:PlaceHolder ID="plNews" runat="server">
     <div class="testDiv">
     <article class="iblock detail-news">
         <p class="tt-main"><span>Tin tức</span></p>
@@ -52,34 +51,6 @@
     </div>
     <!--Other News--> 
     </div>
-    </asp:PlaceHolder>
-    <asp:PlaceHolder ID="plIntro" runat="server">
-    <div class="bor2 intro-page"> 
-      <!---================HEADER===================--> 
-      <script>
-		//slider nivo 2
-		 $(window).load(function() {
-			$('#slider-intro').nivoSlider({	
-			 controlNavThumbs: true,
-				pauseOnHover: true,
-				controlNav: true,
-			});
-		});
-		</script> 
-      <!---================MAIN MENU===================-->
-      <figure class="slider-intro">
-        <div class="theme-default slider-wrapper-detail">
-          <div id="slider-intro" class="nivoSlider"> 
-            <asp:Repeater ID="Rpimg_small1" runat="server">
-            <ItemTemplate>
-                <a href="#"><img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMG_IMAGE1")) %>" data-thumb="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMG_IMAGE1")) %>"  /></a> 
-            </ItemTemplate>
-            </asp:Repeater>
-          </div>
-        </div>
-      </figure>
-    </div>
-    </asp:PlaceHolder>
       
     <div class="control-bottom"> <a href="javascript:history.back()" class="back-to"><i class="fa fa-mail-reply"></i> Back</a>
     <nav class="breadcrumb">

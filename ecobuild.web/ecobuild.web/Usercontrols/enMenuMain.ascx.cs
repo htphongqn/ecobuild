@@ -29,7 +29,7 @@ namespace ecobuild.Usercontrols
         {
             try
             {
-                Rpmenu.DataSource = per.Loadmenu(0, 10, 1, 2, -1);
+                Rpmenu.DataSource = per.Loadmenu(0, 100, 1, 2, -1);
                 Rpmenu.DataBind();
             }
             catch (Exception ex)
@@ -59,7 +59,7 @@ namespace ecobuild.Usercontrols
         {
             try
             {
-                string temp = fun.Getlink_Cat(Cat_Url, Cat_Seo_Url);
+                string temp = fun.Getlink_Cat_EN(Cat_Url, Cat_Seo_Url);
                 return temp;
             }
             catch (Exception)

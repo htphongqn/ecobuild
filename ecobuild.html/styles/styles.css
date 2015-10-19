@@ -102,7 +102,7 @@ body {
 	background: #003D69;
 	width: 100%;
 	left: 0;
-	z-index: 3;
+	z-index: 999;
 	background: url(../images/bg-ct.png) repeat-x;
 	background-size: auto 100%;
 	text-align: center;
@@ -613,23 +613,8 @@ red.hidden {
 }
 }
  @media (max-width:767px) {
-.brand-ft img {
-	max-width: 100%
-}
-.brand-ft {
-	width: 30%;
-}
-.copyright {
-	font-size: 10px;
-	width: 30%;
-	text-align: left
-}
-.menu-home {
-	bottom: 1%
-}
-.img-country {
-	width: 45%;
-}
+
+
 }
  @media (max-width:767px) {
 .search-icon {

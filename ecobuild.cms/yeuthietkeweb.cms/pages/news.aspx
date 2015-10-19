@@ -30,7 +30,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMain" runat="server">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Tin tức - Sản phẩm</h1>
+            <h1 class="page-header">Tin tức - Dịch vụ</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -73,10 +73,11 @@
                         <asp:RadioButtonList ID="rblNewsType" runat="server" RepeatColumns="5" AutoPostBack="True"
                             OnSelectedIndexChanged="rblNewsType_SelectedIndexChanged">
                             <asp:ListItem Text="Tin tức" Value="0" Selected="True"></asp:ListItem>
-                            <asp:ListItem Text="Sản phẩm" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Dịch vụ" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Global Contact" Value="2"></asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="iCate" runat="server">
                         <label>Chuyên mục</label>
                         <asp:DropDownList ID="ddlCategory" runat="server" class="form-control">
                         </asp:DropDownList>
@@ -97,7 +98,7 @@
                         <textarea id="txtDesc" runat="server" class="form-control" onkeyup="ParseDesc(this);" rows="6"
                             onblur="ParseDesc(this);"></textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="display:none;">
                         <label>Thương hiệu</label>
                         <asp:DropDownList ID="ddlBrand" runat="server" class="form-control">
                         </asp:DropDownList>
@@ -181,7 +182,7 @@
                             <asp:ListItem Selected="True" Text="Có" Value="1"></asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="display:none;">
                         <label>Hiển thị trang chủ</label>
                         <asp:RadioButtonList ID="rblNewsPeriod" runat="server" RepeatColumns="4" 
                             RepeatDirection="Horizontal">
@@ -200,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="panel panel-default" id="div_price" runat="server">
+            <div class="panel panel-default" id="div_price" runat="server" style="display:none;">
                 <div class="panel-heading">
                     Thông tin giá
                 </div>

@@ -144,7 +144,7 @@
                         <asp:ListItem Selected="True" Text="Có" Value="1"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="display:none;">
                     <label>Hiển thị trang chủ</label>
                     <asp:RadioButtonList ID="rblCatPeriod" runat="server" RepeatColumns="2">
                         <asp:ListItem Selected="True" Text="Không" Value="0"></asp:ListItem>
@@ -157,19 +157,16 @@
                         <asp:ListItem Text="Tin tức" Value="0" Selected="True"></asp:ListItem>
                         <asp:ListItem Text="Dịch vụ" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Global Contact" Value="2"></asp:ListItem>
-                        <asp:ListItem Text="Intro" Value="3"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
                 <div class="form-group">
                     <label>Vị trí</label>
-                    <asp:RadioButtonList ID="rblPos" runat="server" RepeatColumns="4">
-                        <asp:ListItem Text="Trên" Value="0" Selected="True"></asp:ListItem>
-                        <asp:ListItem Text="Dưới" Value="1"></asp:ListItem>
-                        <asp:ListItem Text="Chính" Value="2"></asp:ListItem>
+                    <asp:RadioButtonList ID="rblPos" runat="server" RepeatColumns="2">
+                        <asp:ListItem Text="Menu" Value="0" Selected="True"></asp:ListItem>
                         <asp:ListItem Text="Khác" Value="20"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="display:none;">
                     <label>Hiển thị Footer</label>
                     <asp:RadioButtonList ID="rblShowFooter" runat="server" RepeatColumns="2">
                         <asp:ListItem Selected="True" Text="Không" Value="0"></asp:ListItem>
@@ -183,7 +180,7 @@
                         <asp:ListItem Text="Có" Value="1"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
-                <div class="form-group" style="display:none">
+                <div class="form-group">
                     <label>Ngôn ngữ</label>
                     <asp:RadioButtonList ID="rblLanguage" runat="server" RepeatColumns="2">
                     </asp:RadioButtonList>
@@ -206,11 +203,11 @@
                     <asp:HyperLink runat="server" ID="hplImage1" Target="_blank"></asp:HyperLink><br />
                     <img id="Image1" runat="server" />
                 </div>
-                <div class="form-group" id="trUploadImage2" runat="server">
+                <div class="form-group" id="trUploadImage2" runat="server" style="display:none">
                     <label>Ảnh đại diện</label>
                     <input id="fileImage2" type="file" name="fileImage1" size="50" runat="server" class="form-control"/>
                 </div>
-                <div class="form-group" id="trImage2" runat="server">
+                <div class="form-group" id="trImage2" runat="server" style="display:none">
                     <asp:ImageButton ID="btnDelete2" runat="server" ImageUrl="../images/icon_delete.png"
                         BorderWidth="0" Width="13px" OnClick="btnDelete2_Click" ToolTip="Xóa hình đại diện này">
                     </asp:ImageButton>

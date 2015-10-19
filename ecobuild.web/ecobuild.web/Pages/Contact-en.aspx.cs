@@ -23,8 +23,8 @@ namespace ecobuild
         {
             if (!IsPostBack)
             {
-                Show_File_HTML("contact-en.htm");
-                Show_File_HTML_Maps("contact-maps-en.htm");
+                Show_File_HTML("contact-e.htm");
+                Show_File_HTML_Maps("contact-maps.htm");
                 LoadTitle();
             }
             var _configs = cf.Config_meta();
@@ -41,7 +41,7 @@ namespace ecobuild
             headerDes.Name = "Description";
             headerKey.Name = "Keywords";
 
-            header.Title = "Liên hệ";
+            header.Title = "Contact";
         }
         private void LoadTitle()
         {

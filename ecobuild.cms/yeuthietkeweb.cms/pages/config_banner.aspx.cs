@@ -357,7 +357,7 @@ namespace yeuthietkeweb.cms.pages
         #endregion
 
         #region Grid Events
-        protected void rptList_ItemCommand(object source, DataGridCommandEventArgs e)
+        protected void rptList_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             Label lblID = (Label)e.Item.FindControl("lblID");
 

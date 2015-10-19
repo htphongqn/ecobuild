@@ -6,7 +6,7 @@
             <ItemTemplate>
                 <li class='<%#GetStyleActive(Eval("cat_seo_url"),Eval("cat_url")) %>'>
                     <a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>">
-                        <i class="img-li"><img src="<%# GetImageCat(Eval("CAT_ID"),Eval("CAT_IMAGE2")) %>" /></i>
+                        <i class="img-li"><img src="<%# GetImageCat(Eval("CAT_ID"),Eval("CAT_IMAGE1")) %>" /></i>
                         <span><%#Eval("cat_name")%></span>
                     </a>
                     <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
@@ -16,7 +16,7 @@
                         <ItemTemplate>
                             <li>
                                 <a href="<%#GetLink(Eval("cat_url"),Eval("cat_seo_url"),1)%>">
-                                    <i class="img-li"><img src="<%# GetImageCat(Eval("CAT_ID"),Eval("CAT_IMAGE2")) %>" /></i>
+                                    <i class="img-li"><img src="<%# GetImageCat(Eval("CAT_ID"),Eval("CAT_IMAGE1")) %>" /></i>
                                     <span><%#Eval("cat_name")%></span>
                                 </a>
                                 <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>

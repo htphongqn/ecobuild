@@ -80,7 +80,7 @@
 	display: inline-block;
 }
 .img-li {
-	height: 90px;
+	height: 60px;
 	position: relative;
 	display: inline-block;
 	vertical-align: bottom
@@ -180,10 +180,9 @@
 	color: #000;
 	text-shadow: 1px 1px 1px #fff;
 	font-size: 1.1em;
-	/*white-space: nowrap;
-	text-overflow: ellipsis;*/
-	overflow: hidden;
-	height:40px
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
 }
 .navx-it >ul> li {
 	position: relative;
@@ -216,18 +215,17 @@
 	float: left
 }
 .navx-it ul ul li img {
-	max-width: 90px;
+	max-width: 50px;
 }
 .navx-it ul ul a span {
 	color: #fff;
 	text-shadow: 1px 1px 1px #000;
 	margin-top: 0;
-	/*white-space: nowrap;
-	text-overflow: ellipsis;*/
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	overflow: hidden;
 	font-size: 0.9em;
-	padding: 0px 5px;
-	height:30px;
+	padding: 0px 7px;
 }
 .navx-it ul ul i.fa {
 	position: absolute;
@@ -237,7 +235,6 @@
 	font-size: 1.2em;
 	width: 15px;
 	height: 15px;
-	cursor:default
 }
  @media (max-width:768px) {
 .container.page {

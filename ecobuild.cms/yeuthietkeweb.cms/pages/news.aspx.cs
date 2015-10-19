@@ -39,6 +39,7 @@ namespace yeuthietkeweb.cms.pages
             }
             else
             {
+                iCate.Visible = false;
                 hplCatNews.HRef = "news_category.aspx?news_id=" + m_news_id;
                 hplEditorHTMl.HRef = "news_editor.aspx?news_id=" + m_news_id;
                 hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id; hplNewsAtt.Visible = false;

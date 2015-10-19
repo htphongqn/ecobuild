@@ -16,6 +16,7 @@ namespace ecobuild.Usercontrols
 
         public clsFormat _clsFormat = new clsFormat();
         News_details ndetail = new News_details();
+        List_news lnews = new List_news();
         Function fun = new Function();
         clsFormat fm = new clsFormat();
         string _sNews_Seo_Url = string.Empty;
@@ -29,20 +30,11 @@ namespace ecobuild.Usercontrols
         protected void Page_Load(object sender, EventArgs e)
         {
             _sNews_Seo_Url = Utils.CStrDef(Request.QueryString["purl"]);
-            _typecat = Utils.CIntDef(Request.QueryString["typecat"]);
-            plIntro.Visible = plNews.Visible = false;
-            if (_typecat == 0)
-            {
-                plNews.Visible = true;
-                Show_File_HTML();
-                hplPrint.HRef = "/in/" + _sNews_Seo_Url + ".html";
-                //Get_ViewMore();
-                Tinkhac();
-            }
-            else if(_typecat == 3) {
-                plIntro.Visible = true;
-                Loadimgbig(100, 0, ref Rpimg_small1);
-            }
+            _typecat = lnews.getTypeByNew(_sNews_Seo_Url);
+            Show_File_HTML();
+            hplPrint.HRef = "/print/" + _sNews_Seo_Url + ".html";
+            //Get_ViewMore();
+            Tinkhac();
             gettitle();
 
         }

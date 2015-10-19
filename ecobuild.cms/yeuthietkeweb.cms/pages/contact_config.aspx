@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="panel panel-default" style="display:none">
+            <div class="panel panel-default">
                 <div class="panel-heading">
                     Cấu hình liên hệ tiếng anh
                 </div>

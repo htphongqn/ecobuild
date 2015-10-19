@@ -18,7 +18,7 @@
                     </a>
                 </figure>
                 <div class="text-media">
-                    <h2 class="tt-media"> <a><%# Eval("NEWS_TITLE")%></a></h2>
+                    <h2 class="tt-media"> <a href='<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL"))%>'><%# Eval("NEWS_TITLE")%></a></h2>
                     <p><%# Eval("NEWS_DESC")%></p>
                 </div>
             </article>
@@ -29,7 +29,7 @@
     </div>
     </asp:PlaceHolder>
     <asp:PlaceHolder ID="plGlobal" runat="server">
-        <div class="testDiv">
+        <div class="testDiv" style="width:100% !important;">
             <div class="iblock globalcontact">
                 <div class="list-country">
                 <asp:Repeater ID="rptGlobal" runat="server">

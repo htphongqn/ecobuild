@@ -13,6 +13,15 @@ namespace ecobuild.Usercontrols {
     public partial class enProjectDetail {
         
         /// <summary>
+        /// Toolbar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::GiaNguyen.UIs.Toolbar Toolbar1;
+        
+        /// <summary>
         /// lbNewsTitle control.
         /// </summary>
         /// <remarks>

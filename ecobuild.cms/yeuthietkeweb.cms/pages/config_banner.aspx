@@ -33,7 +33,7 @@
                         <asp:Label ID="lblError" runat="server" CssClass="errormes" Text="Vui lòng nhập mô tả"
                             Visible="false"></asp:Label>
                     </div>
-                    <div class="form-group" style="display:none">
+                    <div class="form-group">
                         <label>Ngôn ngữ</label>
                         <asp:RadioButtonList ID="rblLanguage" runat="server" RepeatColumns="5">
                         </asp:RadioButtonList>
@@ -82,7 +82,7 @@
                                 </tr>
                             </thead>
                             <tbody>                                
-                                <asp:Repeater ID="rptList" runat="server">
+                                <asp:Repeater ID="rptList" runat="server" OnItemCommand="rptList_ItemCommand">
                                     <ItemTemplate>
                                         <tr class="odd gradeX">
                                             <td>

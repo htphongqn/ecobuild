@@ -3,8 +3,8 @@
 <div class="bor2">
     <div class="control-top"> 
         <span><asp:Label ID="Lbtitle" runat="server"></asp:Label></span> 
-        <a href="/" class="back-to"><i class="fa fa-mail-reply"></i> Back</a> 
-        <a href="/" class="bk-home"><i class="fa fa-home"></i></a> 
+        <a href="/home.html" class="back-to"><i class="fa fa-mail-reply"></i> Back</a> 
+        <a href="/home.html" class="bk-home"><i class="fa fa-home"></i></a> 
     </div>
     <div class="testDiv">
     <div class="iblock list-media list-project">

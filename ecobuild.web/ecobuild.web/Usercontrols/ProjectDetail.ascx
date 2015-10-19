@@ -1,5 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ProjectDetail.ascx.cs" Inherits="ecobuild.Usercontrols.ProjectDetail" %>
-
+<%@ Register src="Toolbar.ascx" tagname="Toolbar" tagprefix="uc1" %>
+<uc1:Toolbar ID="Toolbar1" runat="server" />
 <div class="bor2">
     <div class="control-top"> 
         <span><asp:Label ID="lbNewsTitle" runat="server" /></span> 

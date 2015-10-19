@@ -68,6 +68,53 @@ namespace Controller
                 throw;
             }
         }
+        public int getType(string _cat_seo_url)
+        {
+            try
+            {
+                var list = db.ESHOP_CATEGORies.Where(n => n.CAT_SEO_URL == _cat_seo_url).Select(n => new { n.CAT_TYPE }).ToList();
+                if (list.Count > 0)
+                {
+                    return Utils.CIntDef(list[0].CAT_TYPE);
+                }
+                return -1;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public int getTypeByNew(string _new_seo_url)
+        {
+            try
+            {
+                var list = (from a in db.ESHOP_CATEGORies
+                            join b in db.ESHOP_NEWS_CATs on a.CAT_ID equals b.CAT_ID
+                            join c in db.ESHOP_NEWs on b.NEWS_ID equals c.NEWS_ID
+                            where c.NEWS_SEO_URL == _new_seo_url
+                            select new { a.CAT_TYPE }).ToList();
+                if (list.Count > 0)
+                {
+                    return Utils.CIntDef(list[0].CAT_TYPE);
+                }
+                return -1;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public int getNewsId(string _new_seo_url)
+        {
+            var list = db.ESHOP_NEWs.Where(n => n.NEWS_SEO_URL == _new_seo_url).ToList();
+            if (list.Count > 0)
+            {
+                return list[0].NEWS_ID;
+            }
+            else return 0;
+        }
         //Get sotin
         public int Getsotin(int catid)
         {

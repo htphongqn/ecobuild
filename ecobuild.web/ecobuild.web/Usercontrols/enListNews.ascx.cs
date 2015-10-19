@@ -27,7 +27,7 @@ namespace ecobuild.Usercontrols
             _Catid = Utils.CIntDef(Session["Cat_id"]);
             _cat_seo_url = Request.QueryString["curl"];
             _page = Utils.CIntDef(Request.QueryString["page"]);
-            _typecat = Utils.CIntDef(Request.QueryString["typecat"]);
+            _typecat = lnews.getType(_cat_seo_url);
             if (!IsPostBack)
             {
                 plNews.Visible = plGlobal.Visible = false;

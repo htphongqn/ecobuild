@@ -520,7 +520,9 @@ body {
 
 .globalcontact {
 	text-align: center;
-	padding: 3%
+	padding: 3%;
+width:100%;
+display:inline-block
 }
 /*.globalcontact p:first-child {
 	margin: 10px;
@@ -675,11 +677,9 @@ red.hidden {
 	clear: both;
 	padding: 10px 5px
 }
-.control-top span{ font-size:0.9em}
 }
 @media (max-width:480px) {
 .img-country {
 	width: 100%;
 }
-.control-top span{ font-size:0.8em}
 }

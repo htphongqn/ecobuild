@@ -130,6 +130,15 @@ namespace yeuthietkeweb.cms.pages {
         protected global::System.Web.UI.WebControls.RadioButtonList rblNewsType;
         
         /// <summary>
+        /// iCate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl iCate;
+        
+        /// <summary>
         /// ddlCategory control.
         /// </summary>
         /// <remarks>

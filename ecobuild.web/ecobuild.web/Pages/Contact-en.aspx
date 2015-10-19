@@ -5,28 +5,28 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="bor2">
       <div class="control-top"> 
-        <span>Liên hệ</span> 
+        <span>Contact</span> 
         <a href="/" class="back-to"><i class="fa fa-mail-reply"></i> Back</a> 
         <a href="/" class="bk-home"><i class="fa fa-home"></i></a> 
       </div>
       <div class="testDiv">
         <div class="iblock contact">
-          <p style="margin-bottom:10px; ">Chúng tôi rất vui lòng nhận được sự quan tâm của quý khách!<br />
-            Vui lòng điền đầy đủ thông tin vào form dưới đây chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất.</p>
+          <p style="margin-bottom:10px; "><br />
+            Please complete the form below we will contact you as soon as possible.</p>
           <div class="form-ct">
-            <input type="text" id="Txtname" placeholder="Họ và tên" runat="server"/>
-            <asp:RequiredFieldValidator ID="rfvHoVaTen" runat="server" ErrorMessage="Chưa nhập họ và tên!"
+            <input type="text" id="Txtname" placeholder="Fullname" runat="server"/>
+            <asp:RequiredFieldValidator ID="rfvHoVaTen" runat="server" ErrorMessage="Please enter your fullname"
                 ControlToValidate="Txtname" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
-            <input type="text" id="txtEmail" placeholder="Địa chỉ email" runat="server"/>
+            <input type="text" id="txtEmail" placeholder="Please enter your email" runat="server"/>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail"
-                ErrorMessage="E-mail định dạng chưa đúng!" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="None"
+                ErrorMessage="The email address is not valid or in the wrong format" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="None"
                 ForeColor="Red" ValidationGroup="G40"></asp:RegularExpressionValidator>
-            <input type="text" id="txtPhone" placeholder="Số điện thoại" runat="server"/>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Chưa nhập số điện thoại!"
+            <input type="text" id="txtPhone" placeholder="Phone" runat="server"/>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter your phone number"
                 ControlToValidate="txtPhone" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
-            <input type="text" id="txttitle" placeholder="Tiêu đề" runat="server"/>
+            <input type="text" id="txttitle" placeholder="Title" runat="server"/>
             <textarea id="txtContent" placeholder="Message" runat="server"></textarea>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Chưa nhập nội dung!"
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please enter your message"
                 ControlToValidate="txtContent" Display="None" ForeColor="Red" ValidationGroup="G40">*</asp:RequiredFieldValidator>
             <p class="send">
                <script type="text/javascript"  language="Javascript">
@@ -35,10 +35,10 @@
                         img.src = "/Pages/captchr.ashx?query=" + Math.random();
                     }
               </script>
-              <input type="text" class="captcha" id="txtCapcha" placeholder="Nhập mã an toàn" runat="server"/>
-              <img id="icp" src='/Pages/captchr.ashx?query=<%= querys() %>' alt="Mã  an toàn" />
+              <input type="text" class="captcha" id="txtCapcha" placeholder="Captcha" runat="server"/>
+              <img id="icp" src='/Pages/captchr.ashx?query=<%= querys() %>' alt="Captcha" />
               <a href="javascript:void(0)" onclick="javascript:Catpc();"><img title="Refresh" src="/Resources/images/reloadpaf.png" /></a>
-              <asp:LinkButton ID="Lbthanhtoan" runat="server" OnClick="Lbthanhtoan_Click" ValidationGroup="G40" CssClass="btn-send">Gửi tin</asp:LinkButton>
+              <asp:LinkButton ID="Lbthanhtoan" runat="server" OnClick="Lbthanhtoan_Click" ValidationGroup="G40" CssClass="btn-send">Send</asp:LinkButton>
             </p>
           </div>
           <address class="address-ct">
@@ -47,7 +47,7 @@
           <!--end-->
           </address>
           <map class="map">
-            <p><b>Bản đồ</b></p>
+            <p><b>Map</b></p>
             <asp:Literal ID="Literal2" runat="server"></asp:Literal>
           </map>
         </div>

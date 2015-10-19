@@ -1,10 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="enProjectDetail.ascx.cs" Inherits="ecobuild.Usercontrols.enProjectDetail" %>
-
+<%@ Register src="Toolbar.ascx" tagname="Toolbar" tagprefix="uc1" %>
+<uc1:Toolbar ID="Toolbar1" runat="server" />
 <div class="bor2">
     <div class="control-top"> 
         <span><asp:Label ID="lbNewsTitle" runat="server" /></span> 
-        <a href="/" class="back-to"><i class="fa fa-mail-reply"></i> Back</a> 
-        <a href="/" class="bk-home"><i class="fa fa-home"></i></a> 
+        <a href="/home.html" class="back-to"><i class="fa fa-mail-reply"></i> Back</a> 
+        <a href="/home.html" class="bk-home"><i class="fa fa-home"></i></a> 
     </div>
     <div class="testDiv">
     <article class="iblock detail-news">
