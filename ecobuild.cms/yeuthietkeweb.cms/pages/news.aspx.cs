@@ -259,7 +259,7 @@ namespace yeuthietkeweb.cms.pages
                         div_price.Visible = true;
 
                     }
-                    trCat.Visible = false;
+                    iCate.Visible = false;
                     txtCode.Value = G_info.ToList()[0].n.NEWS_CODE;
                     txtTitle.Value = G_info.ToList()[0].n.NEWS_TITLE;
                     txtDesc.Value = G_info.ToList()[0].n.NEWS_DESC;

@@ -90,9 +90,8 @@
                                         <asp:DropDownList ID="Ddnguon" runat="server" AutoPostBack="True" CssClass="form-control" OnSelectedIndexChanged="Change_nguon">
                                             <asp:ListItem Value="-1">---- Chọn loại tin----</asp:ListItem>
                                             <asp:ListItem Text="Tin tức" Value="0"></asp:ListItem>
-                                            <asp:ListItem Text="Dịch vụ" Value="1"></asp:ListItem>
+                                            <asp:ListItem Text="Dự án" Value="1"></asp:ListItem>
                                             <asp:ListItem Text="Global contact" Value="2"></asp:ListItem>
-                                            <asp:ListItem Text="Intro" Value="3"></asp:ListItem>
                                         </asp:DropDownList>
                                     </td>
                                     <td>                                        

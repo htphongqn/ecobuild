@@ -42,7 +42,7 @@
         <a href="category_list.aspx" class="btn btn-default btn-success btn-sm">
             Quay lại
         </a>
-        <a href="#" id="Hyperseo_cate" runat="server" class="btn btn-default btn-success btn-sm"><span class="glyphicon glyphicon-pencil"
+        <a href="#" id="Hyperseo_cate" runat="server" class="btn btn-default btn-success btn-sm" style="display:none"><span class="glyphicon glyphicon-pencil"
                         aria-hidden="true"></span>&nbsp;Seo chuyên mục </a>
         <asp:Literal ID="lbMessage" runat="server" Text=""></asp:Literal>
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ShowMessageBox="True" ShowSummary="False" ValidationGroup="g1" />
@@ -155,7 +155,7 @@
                     <label>Kiểu hiển thị</label>
                     <asp:RadioButtonList ID="rblCatType" runat="server" RepeatColumns="5">
                         <asp:ListItem Text="Tin tức" Value="0" Selected="True"></asp:ListItem>
-                        <asp:ListItem Text="Dịch vụ" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="Dự án" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Global Contact" Value="2"></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
