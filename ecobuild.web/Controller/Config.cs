@@ -22,10 +22,9 @@ namespace Controller
                 var list = db.ESHOP_CONFIGs.OrderBy(c => c.CONFIG_ID).Take(1).ToList();
                 return list;
             }
-            catch (Exception ex)
+            catch
             {
-
-                throw;
+                return null;
             }
         }
         public string Show_File_HTML(string HtmlFile, string path)

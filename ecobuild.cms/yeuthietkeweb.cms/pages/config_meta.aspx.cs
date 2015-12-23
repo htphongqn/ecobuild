@@ -247,7 +247,7 @@ namespace yeuthietkeweb.cms.pages
                     config_insert.CONFIG_KEYWORD_EN = txtSeoKeywordEn.Value;
                     config_insert.CONFIG_FAVICON = Banner_File;
                     config_insert.CONFIG_FIELD1 = BG_File;
-                    config_insert.CONFIG_FIELD1 = ColorPicker1.Color;
+                    config_insert.CONFIG_FIELD2 = ColorPicker1.Color;
 
                     DB.ESHOP_CONFIGs.InsertOnSubmit(config_insert);
                     DB.SubmitChanges();
@@ -285,7 +285,7 @@ namespace yeuthietkeweb.cms.pages
 
                     //    fileImageBG.PostedFile.SaveAs(fullpathfile);
                     //}
-                    CpanelUtils.ImageResize(Server.MapPath("/data/configs/"), fileImageBG.Value, 1366, fileImageBG.PostedFile.InputStream);
+                    CpanelUtils.ImageResize(Server.MapPath("/data/configs/"), fileImageBG.Value, 2560, fileImageBG.PostedFile.InputStream);
                 }
 
             }

@@ -79,7 +79,7 @@
                         <asp:HyperLink runat="server" ID="hplFile" Target="_blank"></asp:HyperLink><br />
                         <asp:Literal EnableViewState="false" runat="server" ID="ltrImage"></asp:Literal>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="display:none">
                         <label>Chọn màu hover</label>
                         <cc1:ColorPicker ID="ColorPicker1" runat="server"/>
                     </div>
